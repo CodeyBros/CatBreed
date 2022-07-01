@@ -11,9 +11,15 @@ body {
 }
 
 #header {
-    margin: 30px 30px;
+    margin: 30px auto;
     text-align: center;
     font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+    #header {
+        padding: 0 25px;
+        font-size: 1rem;
+    }
 }
 
 form {

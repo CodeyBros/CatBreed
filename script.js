@@ -15,16 +15,17 @@ form.addEventListener('submit', async function(e) {
             alert('No match found!!!')
         }
         else {
+            display.innerHTML = '';
             makeNewInfo(response.data);
         }
     }
     catch (error) {
-        alert(`ENTRY INCORRECT: ${error}`);
+        alert(`ERROR: ${error}`);
     }
 
     function makeNewInfo(cats) {
-        
         for(let result of cats) {
+
             let div = document.createElement('div');
             div.setAttribute('id', 'catResult');
         
